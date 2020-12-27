@@ -33,13 +33,12 @@ class Palindrome extends Component{
         
 
         return (
-            <section className="puzzleBox PalindromPB">
-            <h4> Palindrome </h4>
-            <span className="puzzleText">{JSON.stringify(this.state.names)}</span>
-            <input className="inputLine" onChange= {(e) => this.handleChange(e.target.value)}/>
-            <button className="confirmationButton" onClick= {() => this.isPalindrome(this.state.userInput)} >Filter</button>
-            <span className="resultsBox filterObjectRB">Palindrome: {this.state.palindrome}</span>
-        </section>
+            <section className="puzzleBox palindromePB">
+                <h4> Palindrome </h4>
+                <input className="inputLine" onChange= {(e) => this.handleChange(e.target.value)}/>
+                <button className="confirmationButton" onClick= {() => this.isPalindrome(this.state.userInput)} >Filter</button>
+                <span className="resultsBox filterObjectRB">Palindrome: {this.state.palindrome}</span>
+            </section>
         )
     }
 }
